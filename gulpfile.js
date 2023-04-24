@@ -50,5 +50,4 @@ function serve() {
 }
 
 exports.build = series(html, scss);
-// exports.clear = clear;
-exports.serve = series(html, scss, js, serve);
+exports.default = series(html, scss, js, serve);
